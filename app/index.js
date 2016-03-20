@@ -15,8 +15,8 @@ function init() {
   ctx.fillRect(0,0,width,height)
   ctx.fillStyle = "rgba(250,250,250,0.5)"
   particles.map(function(p) {
-    p[0] += Math.round(2*Math.random())
-    p[1] += Math.round(2*Math.random())
+    p[0] += Math.round(2*Math.random()-1)
+    p[1] += Math.floor(2*Math.random()-1)
     if (p[0] < 0) p[0] = width
     if (p[0] > width) p[0] = 0
     if (p[1] < 0) p[1] = height
@@ -26,5 +26,5 @@ function init() {
 }
 
 function drawPoint(p) {
-  ctx.fillRect(p[0],p[1],2,1)
+  ctx.fillRect(p[0],p[1],1,1)
 }
