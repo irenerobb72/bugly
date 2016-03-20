@@ -20,3 +20,7 @@ function init() {
     drawPoint(p)
  })
 }
+
+function drawPoint(p) {
+  ctx.fillRect(p[0],p[1],1,1)
+}
