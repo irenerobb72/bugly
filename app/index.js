@@ -11,7 +11,7 @@ var particles = d3.range(num).map(function(i) {
 d3.timer(init)
 
 function init() {
-  ctx.fillStyle = "rgba(255,255,255,0.3)"
+  ctx.fillStyle = "rgba(232,29,242,0.3)"
   ctx.fillRect(0,0,width,height)
   ctx.fillStyle = "rgba(0,0,0,0.5)"
   particles.forEach(function(p) {
