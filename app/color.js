@@ -1,7 +1,10 @@
 import $ from 'jquery'
 
-
-$(() => {
-  $('document').on('click', function() {
+function clickingPage() {
+  $(() => {
+    $('document').on('click', function() {
+      var amount = 0
+      if ($(this).attr('id'))
+    })
   })
-})
+}
