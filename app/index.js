@@ -1,7 +1,7 @@
 var num = 50000
 var canvas = document.getElementById("myCanvas")
-var width = canvas.width = 2000;
-var height = canvas.height = 1000;
+var width = canvas.width = 2000
+var height = canvas.height = 1000
 var ctx = canvas.getContext("2d")
 
 var particles = d3.range(num).map(function(i) {
@@ -26,5 +26,5 @@ function init() {
 }
 
 function drawPoint(p) {
-  ctx.fillRect(p[0],p[1],1,1)
+  ctx.fillRect(p[0],p[1],2,1)
 }
