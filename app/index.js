@@ -1,10 +1,14 @@
-var num = 3000
+var num = 20000
 var canvas = document.getElementById("myCanvas")
+var width = canvas.width = 2000;
+var height = canvas.height = 1000;
 var ctx = canvas.getContext("2d")
 
 var particles = d3.range(num).map(function(i) {
-  return [Math.round(with*Math.random()), Math.round(height*Math.random())]
+  return [Math.round(width*Math.random()), Math.round(height*Math.random())]
 })
+
+d3.timer(init)
 
 function init() {
   ctx.fillStyle = "rgba(255,255,255,0.3)"
