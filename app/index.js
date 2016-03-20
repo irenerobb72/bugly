@@ -1,0 +1,18 @@
+var num = 3000
+var canvas = document.getElementById("myCanvas")
+var ctx = canvas.getContext("2d")
+
+function init () {
+  ctx.fillStyle = "rgba(255,255,255,0.3)"
+  ctx.fillRect(0,0,width,height)
+  ctx.fillStyle = "rgba(0,0,0,0.5)"
+  particles.forEach(function(p) {
+    p[0] += Math.round(2*Math.random()-1)
+    p[1] += Math.round(2*Math.random()-1)
+    if (p[0] < 0) p[0] = width
+    if (p[0] > width) p[0] = 0
+    if (p[1] < 0) p[1] = height
+    if (p[1] > height) p[1] = 0
+    drawPoint(p)
+ })
+}
