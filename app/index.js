@@ -11,9 +11,9 @@ var particles = d3.range(num).map(function(i) {
   return [Math.round(width*Math.random()), Math.round(height*Math.random())]
 })
 
-d3.timer(step)
+d3.timer(init)
 
-function step() {
+function init() {
   ctx.fillStyle = "rgba(255,255,255,0.3)"
   ctx.fillRect(0,0,width,height)
   ctx.fillStyle = "rgba(0,0,0,0.5)"
@@ -32,11 +32,12 @@ function drawPoint(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
 
-function clickingPage() {
-  $(() => {
-    $('document').on('click', function() {
-      var amount = 0
-      if ($(this).attr('id'))
-    })
-  })
-}
+// function funTime() {
+//   $(() => {
+//     $('#myCanvas').on('click', function() {
+//       var amount = 0
+//       if ($(this).attr('id'))
+//         amount = 1
+//     })
+//   })
+// }
