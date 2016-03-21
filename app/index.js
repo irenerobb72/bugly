@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 var num = 20000
 
 var canvas = document.getElementById("myCanvas")
@@ -28,4 +30,13 @@ function step() {
 
 function drawPoint(p) {
   ctx.fillRect(p[0],p[1],1,1)
-};
+}
+
+function clickingPage() {
+  $(() => {
+    $('document').on('click', function() {
+      var amount = 0
+      if ($(this).attr('id'))
+    })
+  })
+}
