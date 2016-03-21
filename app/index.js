@@ -23,11 +23,11 @@ function init() {
     if (p[0] > width) p[0] = 0
     if (p[1] < 0) p[1] = height
     if (p[1] > height) p[1] = 0
-    drawPoint(p)
+    draw(p)
   })
 }
 
-function drawPoint(p) {
+function draw(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
 
