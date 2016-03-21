@@ -37,8 +37,8 @@ function draw(p) {
 $(() => {
   var counter = 0
   $('#myCanvas').on('click', function(e) {
-    var counter = 1
-    console.log(this.counter)
+    counter = 1
+    console.log(counter)
     console.log(e)
     var canvas = $(e.target)
     canvas.css('fill', '#0000FF')
