@@ -40,12 +40,12 @@ function funTime() {
       if ($(this).attr('id') == 'myCanvas'){
         amount = 1
         var canvas = $(e.target)
-        canvas.css('background-color', 'blue')
+        canvas.css('color', 'blue')
       }
       else if ($(this).attr('id') == 'myCanvas'){
         amount = 2
         var canvas = $(e.target)
-        canvas.css('background-color', 'green')
+        canvas.css('color', 'green')
       }
     })
   })
