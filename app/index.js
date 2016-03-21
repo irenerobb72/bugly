@@ -1,5 +1,4 @@
 import $ from 'jquery'
-
 var num = 20000
 
 var canvas = document.getElementById("myCanvas")
