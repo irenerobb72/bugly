@@ -39,8 +39,7 @@ $(() => {
   $('#myCanvas').on('click', function(e) {
     counter = 1
     console.log(counter)
-    console.log(e)
     var canvas = $(e.target)
-    canvas.css('fill', '#0000FF')
+    canvas.css('color', '#0000FF')
   })
 })
