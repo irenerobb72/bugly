@@ -5,14 +5,13 @@ const path = require('path')
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
     './app/index.js'
   ],
   module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'react-hot!babel'
+      loader: 'babel'
     },
     {
       test: /\.scss$/,
@@ -20,7 +19,7 @@ module.exports = {
     }
   ]},
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js']
   },
   output: {
     path: __dirname + '/',
@@ -32,8 +31,5 @@ module.exports = {
   },
   sassLoader: {
      includePaths: [path.resolve(__dirname, "./styles")]
-   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+   }
 }
