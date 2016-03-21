@@ -35,11 +35,18 @@ function draw(p) {
 
 function funTime() {
   $(() => {
-    $('#myCanvas').css('background-color', 'blue')
-    $('#myCanvas').on('click', function() {
+    $('#myCanvas').on('click', function(e) {
       var amount = 0
-      if ($(this).attr('id'))
+      if ($(this).attr('id') == 'myCanvas'){
         amount = 1
+        var canvas = $(e.target)
+        canvas.css('background-color', 'blue')
+      }
+      else if ($(this).attr('id') == 'myCanvas'){
+        amount = 2
+        var canvas = $(e.target)
+        canvas.css('background-color', 'green')
+      }
     })
   })
 }
