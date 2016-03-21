@@ -33,20 +33,11 @@ function draw(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
 
-function funTime() {
-  $(() => {
-    $('#myCanvas').on('click', function(e) {
-      var amount = 0
-      if ($(this).attr('id') == 'myCanvas'){
-        amount = 1
-        var canvas = $(e.target)
-        canvas.css('color', 'blue')
-      }
-      else if ($(this).attr('id') == 'myCanvas'){
-        amount = 2
-        var canvas = $(e.target)
-        canvas.css('color', 'green')
-      }
-    })
+
+$(() => {
+  $('#myCanvas').on('click', function(e) {
+    console.log(e)
+    var canvas = $(e.target)
+    canvas.css('fill', '#0000FF')
   })
-}
+})
