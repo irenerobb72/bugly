@@ -1,4 +1,5 @@
 import d3 from 'd3'
+import $ from 'jquery'
 
 var num = 20000
 
@@ -31,7 +32,3 @@ function init() {
 function draw(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
-
-canvas.addEventListener('click', function(e) {
-  ctx.fillStyle = 'rgba(255, 0, 255, 0.3)'
-})
