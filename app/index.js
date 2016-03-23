@@ -1,5 +1,4 @@
 import d3 from 'd3'
-import $ from 'jquery'
 
 var num = 20000
 
@@ -33,19 +32,6 @@ function draw(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
 
-
-$(() => {
-  var counter = 0
-  $('#myCanvas').on('click', function(e) {
-    var counter = 0
-    if($(this).attr('id') == 'myCanvas') {
-      counter = 1
-      var canvas = $(e.target)
-      canvas.css('color', '#0000FF')
-    } else if($(this).attr('id') == 'myCanvas') {
-      counter = 2
-      var canvas = $(e.target)
-      canvas.css('color', '#FF0000')
-    }
-  })
+canvas.addEventListener('click', function(e) {
+  ctx.fillStyle = 'rgba(255, 0, 255, 0.3)'
 })
