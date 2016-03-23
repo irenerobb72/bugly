@@ -34,18 +34,6 @@ function draw(p) {
 }
 
 
-$(() => {
-  var counter = 0
-  $('#myCanvas').on('click', function(e) {
-    var counter = 0
-    if($(this).attr('id') == 'myCanvas') {
-      counter = 1
-      var canvas = $(e.target)
-      canvas.css('color', '#0000FF')
-    } else if($(this).attr('id') == 'myCanvas') {
-      counter = 2
-      var canvas = $(e.target)
-      canvas.css('color', '#FF0000')
-    }
-  })
+$('#myCanvas').on('click', function(e) {
+  
 })
