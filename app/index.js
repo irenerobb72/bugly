@@ -35,5 +35,5 @@ function draw(p) {
 
 
 $('#myCanvas').on('click', function(e) {
-  var clickOne = e.canvas
+  var clickOne = $(e.canvas)
 })
