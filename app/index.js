@@ -35,5 +35,7 @@ function draw(p) {
 
 
 $('#myCanvas').on('click', function(e) {
+  var canvas = document.getElementById("myCanvas")
   var clickOne = $(e.canvas)
+  clickOne.css('fill', '#FFA500')
 })
