@@ -33,7 +33,6 @@ function draw(p) {
   ctx.fillRect(p[0],p[1],1,1)
 }
 
-
 $('#myCanvas').on('click', function(e) {
   var canvas = document.getElementById("myCanvas")
   var clickOne = $(e.canvas)
